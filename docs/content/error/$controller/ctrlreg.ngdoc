@@ -21,3 +21,20 @@ nor {@link ng.$controllerProvider#register `$controllerProvider.register()`}.
 
 
 Please consult the {@link ng.$controller $controller} service api docs to learn more.
+//head app
+(function(angular){
+angular.module("app", []).controller("cnt",cltro);
+
+//creat services
+cltro.$inject=['$scope','$http','$rootScope'];
+    function cltro($scope,$http,$rootScope)
+        {
+            $scope.userDate={};
+            $scope.userDate.Home="Home";
+            $scope.userDate.Blog="Blog";
+            $scope.userDate.About="About";
+            $scope.userDate.Con="Contact";
+            $scope.userDate.Log="Log In";
+        }
+})
+(angular);
